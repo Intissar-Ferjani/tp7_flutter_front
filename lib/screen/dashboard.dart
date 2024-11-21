@@ -1,13 +1,16 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:tp7_test/template/navbar.dart';
 
 class Dashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: NavBar('Dashboard'),
       backgroundColor: Colors.deepPurple,
       drawer: Drawer(
         child: ListView(
+          // Important: Remove any padding from the ListView.
           padding: EdgeInsets.zero,
           children: [
             const SizedBox(
